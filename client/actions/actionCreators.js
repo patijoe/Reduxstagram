@@ -1,13 +1,15 @@
+import * as types from './types';
+
 export function increment(index) {
   return {
-    type: 'INCREMENT_LIKES',
+    type: types.INCREMENT_LIKES,
     index
   };
 }
 
 export function addComments(postId, author, comment) {
   return {
-    type: 'ADD_COMMENTS',
+    type: types.ADD_COMMENTS,
     postId,
     author,
     comment
@@ -16,7 +18,7 @@ export function addComments(postId, author, comment) {
 
 export function removeComments(index) {
   return {
-    type: 'REMOVE_COMMENTS',
+    type: types.REMOVE_COMMENTS,
     index
   };
 }
